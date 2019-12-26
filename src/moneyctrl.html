@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 ,user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>首页</title>
+    <title>省钱控</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/moneyctrl.css">
     <script src="./lib/jquery-3.4.1.min.js"></script>
     <script src="./js/rem.js"></script>
 </head>
@@ -15,47 +15,41 @@
 <body>
     <!-- 头部 -->
     <header class="mm_header">
+        <div class="right">
+        </div>
         <div class="left">
-            <img src="./img/header_logo.png" alt="">
+            <h1>省钱控 - 最新优惠</h1>
         </div>
         <div class="right">
             <img src="./img/header_app.png" alt="">
         </div>
     </header>
 
-    <!-- 搜索栏 -->
-    <div class="mm_search">
-        <input class="left" type="text" placeholder="请输入你想比价的商品">
-        <button class="right search">搜索</button>
-    </div>
 
-    <!-- 導航欄 -->
-    <ul class="mm_nav clearfix">
-        <!-- 挖个坑 -->
-    </ul>
+
     <!-- z折扣 -->
     <section class="mm_discount">
-        <div class="top">
-            <p>超值折扣推荐</p>
-            <div class="item">></div>
-        </div>
         <ul class="main">
             <!-- 挖个坑 -->
         </ul>
-        <div class="more">
-            <button>更多优惠信息 »</button>
-        </div>
-
-        <!-- 品牌排行 -->
-        <div class="buttom">
-            <div class="top">
-                <p>品牌排行</p>
-                <div class="item">></div>
-            </div>
+        <!-- 分页 -->
+        <div class="form">
+            <span><a class="leftBtn btn" href="javascript:;">上一页</a></span>
+            <span>
+                <select class="middleBtn">
+                    <option value="1">第1页</option>
+                    <option value="2">第2页</option>
+                    <option value="3">第3页</option>
+                </select>
+                </span>
+            <span><a class="rightBtn btn" href="javascript:;">下一页</a></span>
         </div>
     </section>
     <!-- 底部 -->
     <footer class="mm_footer">
+        <div class="fff">
+
+        </div>
         <ul class="ft">
             <li><a href="#">登录</a></li>
             <li><a href="#">注册</a></li>
@@ -69,19 +63,8 @@
         </div>
     </footer>
 
-    <!-- 模板渲染 -->
-    <script type="text/html" id="tpl">
-        {{each result v i}}
-        <li class="{{i>=8? 'active':''}}">
-            <a href="{{v.titlehref}}.html">
-                <img src="./img/{{v.img}}" alt="">
-                <p>{{v.name}}</p>
-            </a>
-        </li>
-        {{/each}}
-    </script>
     <!-- 折扣渲染 -->
-    <script type="text/html" id="tpl2">
+    <script type="text/html" id="tpl">
         {{each result v i}}
         <li>
             <a href="moneyproduct.html?productid={{v.productId}}">
@@ -97,7 +80,7 @@
         {{/each}}
     </script>
     <script src="./lib/template-web.js"></script>
-    <script src="./js/index.js"></script>
+    <script src="./js/moneyctrl.js"></script>
 </body>
 
 </html>

@@ -165,3 +165,8 @@ img {
   font-size: 0.24rem /* 12/50 */;
   text-align: center;
 }
+.fff {
+  width: 100%;
+  height: 0.52rem /* 26/50 */;
+  background-color: #fff;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 ,user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商城导航</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/sitenav.css">
+    <script src="./lib/jquery-3.4.1.min.js"></script>
+    <script src="./js/rem.js"></script>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header class="mm_header">
+        <div class="left">
+            <h1>商城导航</h1>
+        </div>
+        <div class="right">
+            <img src="./img/header_app.png" alt="">
+        </div>
+    </header>
+    <!-- 内容区 -->
+    <section class="mm_content">
+        <div class="box clearfix">
+            <!-- 挖坑 -->
+        </div>
+
+    </section>
+    <!-- 底部 -->
+    <footer class="mm_footer">
+        <div class="fff">
+        </div>
+        <ul class="ft">
+            <li><a href="#">登录</a></li>
+            <li><a href="#">注册</a></li>
+            <li>
+                <a href="index.html"><img src="http://www.zuyushop.com/wap/images/top.jpg" alt="" width="15px"> 返回顶部</a>
+            </li>
+        </ul>
+        <div class="last">
+            <p><span class="main-color">手机APP下载</span><a href="index.html">慢慢买手机版</a>--掌上比价平台</p>
+            <p>m.manmanbuy.com</p>
+        </div>
+    </footer>
+
+    <!-- 模板渲染 -->
+    <script type="text/html" id="tpl">
+        {{each result v i}}
+        <a href="{{v.navHref}}">
+            <img src="{{v.navImg}}" alt=""> {{v.navTitle}}
+        </a>
+        {{/each}}
+    </script>
+
+    <script src="./lib/template-web.js"></script>
+    <script src="./js/sitenav.js"></script>
+</body>
+
+</html>

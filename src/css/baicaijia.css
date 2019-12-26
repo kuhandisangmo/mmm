@@ -1,0 +1,145 @@
+.mm_header {
+  background-color: #f4483e;
+}
+.mm_header h1 {
+  font-size: 0.48rem /* 24/50 */;
+  color: #fff;
+  text-align: center;
+}
+.mm_main .title {
+  width: 14rem /* 700/50 */;
+  border-right: 1px solid #ccc;
+  overflow-x: scroll;
+  background-color: #fff;
+}
+.mm_main .title .nav {
+  width: 16rem /* 800/50 */;
+  height: 0.76rem /* 38/50 */;
+  line-height: 0.76rem /* 38/50 */;
+  overflow: hidden;
+}
+.mm_main .title .nav li {
+  float: left;
+  font-size: 0.32rem /* 16/50 */;
+  padding: 0 0.24rem /* 12/50 */;
+}
+.mm_main .bcj .list li {
+  position: relative;
+  margin: 0.2rem /* 10/50 */ 0;
+  padding: 0 0.1rem /* 5/50 */;
+  background-color: #fff;
+}
+.mm_main .bcj .list li a {
+  display: block;
+  width: 100%;
+  height: 3rem /* 150/50 */;
+  display: flex;
+  padding-top: 0.2rem /* 10/50 */;
+  background-color: #fff;
+}
+.mm_main .bcj .list li a .left {
+  width: 2.64rem /* 132/50 */;
+  height: 2.64rem /* 132/50 */;
+  margin-right: 0.1rem /* 5/50 */;
+}
+.mm_main .bcj .list li a .left img {
+  width: 2.6rem /* 130/50 */;
+  height: 2.6rem /* 130/50 */;
+  font-size: 0.32rem /* 16/50 */;
+  color: #ccc;
+  border: 1px solid #666;
+}
+.mm_main .bcj .list li a .right {
+  flex: 1;
+  font-size: 0.36rem /* 18/50 */;
+  color: #666;
+}
+.mm_main .bcj .list li a .price {
+  margin-top: 0.2rem /* 10/50 */;
+  margin-bottom: 0.28rem /* 14/50 */;
+  font-size: 0.48rem /* 24/50 */;
+  color: red;
+}
+.mm_main .bcj .list li a .price .item {
+  padding-left: 0.2rem /* 10/50 */;
+  font-size: 0.28rem /* 14/50 */;
+  color: #ccc;
+  text-decoration: line-through;
+}
+.mm_main .bcj .list li a .bar i {
+  background-color: pink;
+  border-radius: 0.1rem /* 5/50 */;
+  position: relative;
+  float: left;
+}
+.mm_main .bcj .list li a .bar i em {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-radius: 0.1rem /* 5/50 */;
+  background: #fc353a;
+  display: block;
+  transition: all 0.3s cubic-bezier(0.39, 0.58, 0.57, 1);
+  width: 0;
+}
+.mm_main .bcj .list li a .bar i span {
+  z-index: 444;
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 1.64rem /* 82/50 */;
+  height: 0.28rem /* 14/50 */;
+  border-radius: 0.1rem /* 5/50 */;
+  border: 1px solid red;
+  font-size: 0.24rem /* 12/50 */;
+  font-weight: bolder;
+  color: #fff;
+  text-align: center;
+}
+.mm_main .bcj .list li a .bar .num {
+  float: left;
+  font-size: 0.24rem /* 12/50 */;
+  color: red;
+  margin-left: 0.1rem /* 5/50 */;
+}
+.mm_main .bcj .list li a .pp {
+  margin-top: 0.2rem /* 10/50 */;
+}
+.mm_main .bcj .list li a .pp .goods {
+  float: left;
+  width: 2.8rem /* 140/50 */;
+  height: 0.52rem /* 26/50 */;
+  line-height: 0.52rem /* 26/50 */;
+  text-align: center;
+  border: 1px dotted red;
+  font-size: 0.28rem /* 14/50 */;
+}
+.mm_main .bcj .list li a .pp .pi {
+  float: right;
+  width: 1.32rem /* 66/50 */;
+  height: 0.56rem /* 28/50 */;
+  text-align: center;
+  line-height: 0.56rem /* 28/50 */;
+  border-radius: 0.1rem /* 5/50 */;
+  background-color: #ff5e5d;
+  font-size: 0.28rem /* 14/50 */;
+  color: #fff;
+  margin-right: 0.1rem /* 5/50 */;
+}
+.mm_main .bcj .list li .btn-2 {
+  z-index: 4;
+  position: absolute;
+  bottom: 0.2rem /* 10/50 */;
+  right: 0;
+  width: 1.32rem /* 66/50 */;
+  height: 0.56rem /* 28/50 */;
+  line-height: 0.18rem /* 9/50 */;
+  border-radius: 0.1rem /* 5/50 */;
+  background-color: #ff5e5d;
+  font-size: 0.28rem /* 14/50 */;
+  color: #fff;
+  margin-right: 0.1rem /* 5/50 */;
+  padding-left: 0.08rem /* 4/50 */;
+}

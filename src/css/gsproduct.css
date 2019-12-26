@@ -1,0 +1,109 @@
+.mm_header .left {
+  text-align: center;
+  line-height: 0.96rem /* 48/50 */;
+  font-size: 0.5rem /* 25/50 */;
+  color: #ffffff;
+}
+.mm_content {
+  position: relative;
+}
+.mm_content .nav {
+  display: flex;
+  font-size: 0.34rem /* 17/50 */;
+  border-bottom: 2px solid #ccc;
+}
+.mm_content .nav .top {
+  flex: 1;
+  display: flex;
+  border-right: 1px solid #ccc;
+  background-color: #fff;
+}
+.mm_content .nav .top li {
+  flex: 1;
+  text-align: center;
+  line-height: 0.8rem /* 40/50 */;
+}
+.mm_content .nav .litter {
+  width: 1rem /* 50/50 */;
+  height: 0.8rem /* 40/50 */;
+  text-align: center;
+  background-color: #fff;
+}
+.mm_content .nav .litter img {
+  width: 0.6rem /* 30/50 */;
+  height: 0.6rem /* 30/50 */;
+  margin-top: 0.1rem /* 5/50 */;
+}
+.mm_content .shop {
+  z-index: 8;
+  width: 100%;
+  margin-top: 0.84rem /* 42/50 */;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.mm_content .shop.active {
+  display: none;
+}
+.mm_content .shop li a {
+  text-decoration: none;
+  display: block;
+  height: 0.8rem /* 40/50 */;
+  font-size: 0.34rem /* 17/50 */;
+  line-height: 0.8rem /* 40/50 */;
+  padding-left: 0.2rem /* 10/50 */;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+.mm_content .pd {
+  margin: 0.2rem /* 10/50 */;
+}
+.mm_content .pd .pd_list li {
+  float: left;
+  width: 50%;
+  height: 5rem /* 250/50 */;
+  margin-bottom: 0.2rem /* 10/50 */;
+}
+.mm_content .pd .pd_list li a {
+  display: block;
+  height: 100%;
+  margin: 0.1rem /* 5/50 */;
+  background-color: #fff;
+}
+.mm_content .pd .pd_list li a .top {
+  width: 100%;
+  text-align: center;
+}
+.mm_content .pd .pd_list li a .top img {
+  height: 3.48rem /* 174/50 */;
+  font-size: 0.24rem /* 12/50 */;
+}
+.mm_content .pd .pd_list li a .bottom .title {
+  padding: 0.2rem /* 10/50 */;
+  font-size: 0.24rem /* 12/50 */;
+}
+.mm_content .pd .pd_list li a .bottom .last {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.1rem /* 5/50 */ 0.2rem /* 10/50 */;
+}
+.mm_content .pd .pd_list li a .bottom .last .price {
+  font-size: 0.4rem /* 20/50 */;
+  line-height: 0.52rem /* 26/50 */;
+  color: #f8601d;
+  font-weight: bolder;
+}
+.mm_content .pd .pd_list li a .bottom .last .btn {
+  width: 1.4rem /* 70/50 */;
+  height: 0.52rem /* 26/50 */;
+  font-size: 0.28rem /* 14/50 */;
+  text-align: center;
+  line-height: 0.52rem /* 26/50 */;
+  background-color: #ff9501;
+  border-radius: 0.1rem /* 5/50 */;
+  color: #fff;
+}
+.color {
+  width: 100%;
+  height: 0.52rem /* 26/50 */;
+}

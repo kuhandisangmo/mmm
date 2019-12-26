@@ -1,0 +1,113 @@
+body {
+  background-color: #fff;
+}
+.mm_header .left {
+  text-align: center;
+  line-height: 0.96rem /* 48/50 */;
+  font-size: 0.5rem /* 25/50 */;
+  color: #ffffff;
+}
+.content {
+  width: 100%;
+  padding: 0.1rem /* 5/50 */ 0.2rem /* 10/50 */;
+  background-color: #fff;
+}
+.content h3 {
+  font-size: 0.4rem /* 20/50 */;
+}
+.content span {
+  font-size: 0.28rem /* 14/50 */;
+  color: #ccc;
+}
+.content p {
+  font-size: 0.36rem /* 18/50 */;
+  color: #666;
+}
+.content .item {
+  float: right;
+}
+.content .item img {
+  width: 2.8rem /* 140/50 */;
+  height: 2.8rem /* 140/50 */;
+}
+.content .product img {
+  width: 4.44rem /* 222/50 */;
+  height: 4.44rem /* 222/50 */;
+}
+.content a {
+  display: block;
+  margin: 0.4rem /* 20/50 */ 0.2rem /* 10/50 */;
+  height: 30px;
+  text-align: center;
+  line-height: 0.7rem /* 35/50 */;
+  font-size: 0.32rem /* 16/50 */;
+  color: #fff;
+  background-color: #ff841d;
+  border-radius: 0.1rem /* 5/50 */;
+}
+.big {
+  width: 100%;
+  padding: 0.6rem /* 30/50 */ 0.2rem /* 10/50 */;
+}
+.big img {
+  width: 100%;
+  height: 100%;
+}
+.publish {
+  font-size: 0.36rem /* 18/50 */;
+  padding-left: 0.3rem /* 15/50 */;
+}
+.form {
+  text-align: center;
+  padding: 0.12rem /* 6/50 */ 0.16rem /* 8/50 */;
+}
+.form .discuss {
+  text-decoration: none;
+}
+.form .btn {
+  padding: 0 0.36rem /* 18/50 */;
+  width: 100%;
+  height: 0.72rem /* 36/50 */;
+  background-color: #fbfbfb;
+}
+.form .btn .btn1 {
+  float: right;
+  width: 2rem /* 100/50 */;
+  height: 0.72rem /* 36/50 */;
+  border: none;
+  background-color: #ff841d;
+  color: #fff;
+}
+.new li {
+  display: flex;
+  width: 100%;
+  height: 1.6rem /* 80/50 */;
+  padding: 0.4rem /* 20/50 */ 0.2rem /* 10/50 */;
+}
+.new li .left {
+  width: 0.8rem /* 40/50 */;
+  height: 0.8rem /* 40/50 */;
+}
+.new li .left img {
+  display: block;
+  width: 0.8rem /* 40/50 */;
+  border-radius: 50%;
+}
+.new li .right {
+  flex: 1;
+  padding-left: 0.2rem /* 10/50 */;
+  padding-right: 0.2rem /* 10/50 */;
+}
+.new li .right .name {
+  font-size: 0.24rem /* 12/50 */;
+  color: #5997c0;
+}
+.new li .right .last {
+  font-size: 0.28rem /* 14/50 */;
+}
+.new li .right .time {
+  float: right;
+  font-size: 0.24rem /* 12/50 */;
+  text-align: start;
+  color: #ccc;
+}

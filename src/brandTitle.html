@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 ,user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>首页</title>
+    <title>品牌大全</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./lib/直接引用-bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/brandTitle.css">
     <script src="./lib/jquery-3.4.1.min.js"></script>
     <script src="./js/rem.js"></script>
 </head>
@@ -22,40 +23,26 @@
             <img src="./img/header_app.png" alt="">
         </div>
     </header>
-
     <!-- 搜索栏 -->
     <div class="mm_search">
         <input class="left" type="text" placeholder="请输入你想比价的商品">
         <button class="right search">搜索</button>
     </div>
-
-    <!-- 導航欄 -->
-    <ul class="mm_nav clearfix">
-        <!-- 挖个坑 -->
-    </ul>
-    <!-- z折扣 -->
-    <section class="mm_discount">
-        <div class="top">
-            <p>超值折扣推荐</p>
-            <div class="item">></div>
-        </div>
-        <ul class="main">
-            <!-- 挖个坑 -->
-        </ul>
-        <div class="more">
-            <button>更多优惠信息 »</button>
-        </div>
-
-        <!-- 品牌排行 -->
-        <div class="buttom">
-            <div class="top">
-                <p>品牌排行</p>
-                <div class="item">></div>
-            </div>
-        </div>
+    <!-- 面包屑导航 -->
+    <ol class="breadcrumb">
+        <li><a href="index.html">首页</a></li>
+        <li class="active">全部分类</li>
+    </ol>
+    <!-- 品牌排行 -->
+    <div class="first">热门品牌排行</div>
+    <!-- 主体区域 -->
+    <section class="mm_main">
+        <!-- 挖坑 -->
     </section>
     <!-- 底部 -->
     <footer class="mm_footer">
+        <div class="fff">
+        </div>
         <ul class="ft">
             <li><a href="#">登录</a></li>
             <li><a href="#">注册</a></li>
@@ -68,36 +55,21 @@
             <p>m.manmanbuy.com</p>
         </div>
     </footer>
-
     <!-- 模板渲染 -->
     <script type="text/html" id="tpl">
         {{each result v i}}
-        <li class="{{i>=8? 'active':''}}">
-            <a href="{{v.titlehref}}.html">
-                <img src="./img/{{v.img}}" alt="">
-                <p>{{v.name}}</p>
-            </a>
-        </li>
-        {{/each}}
-    </script>
-    <!-- 折扣渲染 -->
-    <script type="text/html" id="tpl2">
-        {{each result v i}}
-        <li>
-            <a href="moneyproduct.html?productid={{v.productId}}">
-                <div class="left">
-                    <img src="{{v.productImgLg.src}}" alt="{{v.productImgSm.alt}}">
-                </div>
-                <div class="right">
-                    <p class="price">{{v.productName}} <i class="main-color">{{v.productPinkage}}</i></p>
-                    <p class="time">{{v.productFrom}} | {{v.productTime}}</p>
-                </div>
-            </a>
-        </li>
+        <div class="lable">
+            <div class="top" data-id="{{v.brandTitleId}}">
+                <span>{{v.brandTitle}}</span>
+                <div class="item"><img src="./img/箭头 下.png" alt=""></div>
+            </div>
+            <a class="links" href="brand.html?brandtitleid={{v.brandTitleId}}"></a>
+        </div>
         {{/each}}
     </script>
     <script src="./lib/template-web.js"></script>
-    <script src="./js/index.js"></script>
+    <script src="./lib/直接引用-bootstrap/js/bootstrap.min.js"></script>
+    <script src="./js/brandTitle.js"></script>
 </body>
 
 </html>

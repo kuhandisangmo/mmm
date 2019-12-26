@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 ,user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/discount.css">
+    <script src="./lib/jquery-3.4.1.min.js"></script>
+    <script src="./js/rem.js"></script>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header class="mm_header">
+        <div class="left">
+            <h1>国内折扣</h1>
+        </div>
+        <div class="right">
+            <img src="./img/header_app.png" alt="">
+        </div>
+    </header>
+    <!-- 内容区 -->
+    <section class="content">
+        <!-- 挖坑区 -->
+        <a href="#">前往购买</a>
+    </section>
+
+    <div class="big">
+        <img src="./img/mmbweixin2.png" alt="">
+    </div>
+
+    <div class="publish">发表评论</div>
+    <div class="form">
+        <textarea cols="30" rows="10" class="discuss"></textarea>
+        <div class="btn">
+            <input class="btn1" type="submit" value="发表评论">
+        </div>
+    </div>
+    <!-- 最新评论 -->
+    <div class="publish">最新评论</div>
+    <ul class="new">
+        <li>
+            <div class="left">
+                <img src="./img/ic_kb.png" alt="">
+            </div>
+            <div class="right">
+                <div class="time">2016/10/25 14:18:45</div>
+                <div class="name">赶鸭子上架</div>
+                <div class="last">比超市便宜几块</div>
+            </div>
+        </li>
+    </ul>
+    <!-- 底部 -->
+    <footer class="mm_footer">
+        <div class="fff">
+        </div>
+        <ul class="ft">
+            <li><a href="#">登录</a></li>
+            <li><a href="#">注册</a></li>
+            <li>
+                <a href="index.html"><img src="http://www.zuyushop.com/wap/images/top.jpg" alt="" width="15px"> 返回顶部</a>
+            </li>
+        </ul>
+        <div class="last">
+            <p><span class="main-color">手机APP下载</span><a href="index.html">慢慢买手机版</a>--掌上比价平台</p>
+            <p>m.manmanbuy.com</p>
+        </div>
+    </footer>
+
+    <!-- 模板渲染 -->
+    <script type="text/html" id="tpl">
+        {{each arr v i}}
+        <h3>{{v.productName}}</h3>
+        <span>{{v.productFrom}} &nbsp;&nbsp;&nbsp;</span><span>{{v.productTips}}
+        / 慢慢买</span>
+        <div class="item"><img src="{{v.productImg.src}}" alt="{{v.productImg.alt}}"></div>
+        <p>{{v.productInfo}}</p>
+        <p>{{v.productName}}</p>
+        <div class="product"><img src="{{v.productImg.src}}" alt="{{v.productImg.alt}}"></div>
+        {{/each}}
+    </script>
+
+    <script src="./lib/template-web.js"></script>
+    <script src="./js/discount.js"></script>
+</body>
+
+</html>

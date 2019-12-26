@@ -1,0 +1,42 @@
+.mm_header .left {
+  text-align: center;
+  line-height: 0.96rem /* 48/50 */;
+  font-size: 0.5rem /* 25/50 */;
+  color: #ffffff;
+}
+.content ul li {
+  float: left;
+  width: 50%;
+  height: 5.36rem /* 268/50 */;
+  padding: 0.2rem /* 10/50 */ 0 0 0.2rem /* 10/50 */;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+.content ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding-top: 0.16rem /* 8/50 */;
+}
+.content ul li a .img {
+  width: 100%;
+  text-align: center;
+  padding-right: 0.3rem /* 15/50 */;
+}
+.content ul li a .img img {
+  width: 2.8rem /* 140/50 */;
+  height: 2.8rem /* 140/50 */;
+  font-size: 0.24rem /* 12/50 */;
+}
+.content ul li a .text {
+  font-size: 0.36rem /* 18/50 */;
+  height: 1rem /* 50/50 */;
+}
+.content ul li a .price {
+  font-size: 0.36rem /* 18/50 */;
+}
+.content ul li a .shop {
+  font-size: 0.28rem /* 14/50 */;
+  padding-top: 0.2rem /* 10/50 */;
+  color: #ccc;
+}

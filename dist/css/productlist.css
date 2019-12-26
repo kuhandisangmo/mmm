@@ -1,0 +1,62 @@
+.breadcrumb > li + li:before {
+  padding: 0 5px;
+  color: #ccc;
+  content: ">";
+}
+.mm_main .breadcrumb .right {
+  width: 1.24rem /* 62/50 */;
+  height: 0.56rem /* 28/50 */;
+  background-color: #e4e4e4;
+  border-radius: 0.1rem /* 5/50 */;
+  box-shadow: 1px 2px 4px 0px;
+}
+.mm_main .breadcrumb .right a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #000;
+  line-height: 0.56rem /* 28/50 */;
+  margin-bottom: 0.1rem /* 5/50 */;
+}
+.mm_main .main li {
+  height: 2.6rem /* 130/50 */;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+.mm_main .main li a {
+  display: flex;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+}
+.mm_main .main li a .left {
+  width: 2.6rem /* 130/50 */;
+  padding-left: 0.2rem /* 10/50 */;
+}
+.mm_main .main li a .left img {
+  width: 2.2rem /* 110/50 */;
+  margin-top: 0.1rem /* 5/50 */;
+  font-size: 0.24rem /* 12/50 */;
+}
+.mm_main .main li a .right {
+  flex: 1;
+  margin-left: 0.1rem /* 5/50 */;
+  padding-bottom: 0.4rem /* 20/50 */;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.mm_main .main li a .right .text {
+  margin-top: 0.32rem /* 16/50 */;
+  font-size: 0.28rem /* 14/50 */;
+  color: #000;
+}
+.mm_main .main li a .right .price {
+  font-size: 0.36rem /* 18/50 */;
+}
+.mm_main .main li a .right .time {
+  font-size: 0.24rem /* 12/50 */;
+  color: #ccc;
+}

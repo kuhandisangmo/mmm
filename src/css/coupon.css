@@ -1,0 +1,41 @@
+.mm_header {
+  background-color: #f4483e;
+}
+.mm_header h1 {
+  font-size: 0.48rem /* 24/50 */;
+  color: #fff;
+  text-align: center;
+}
+.mm_main .breadcrumb > li + li:before {
+  padding: 0 5px;
+  color: #ccc;
+  content: ">";
+}
+.mm_main .discount {
+  padding: 0 0.2rem /* 10/50 */;
+  display: flex;
+}
+.mm_main .discount li {
+  width: 2.4rem /* 120/50 */;
+  height: 1.6rem /* 80/50 */;
+  border: 1px solid #eee;
+  margin-left: 0.2rem /* 10/50 */ 0 !important;
+}
+.mm_main .discount li a {
+  display: block;
+  text-align: center;
+}
+.mm_main .discount li a img {
+  margin-top: 0.2rem /* 10/50 */;
+  width: 1rem /* 50/50 */;
+  font-size: 0.28rem /* 14/50 */;
+}
+.mm_main .discount li a p {
+  font-size: 0.24rem /* 12/50 */;
+  color: #000;
+}
+.mm_main .discount .box {
+  width: 0.1rem /* 5/50 */;
+  height: 100%;
+  background-color: #fff;
+}
