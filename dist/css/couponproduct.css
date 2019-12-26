@@ -1,0 +1,41 @@
+.mm_header {
+  background-color: #f4483e;
+}
+.mm_header h1 {
+  font-size: 0.48rem /* 24/50 */;
+  color: #fff;
+  text-align: center;
+}
+.mm_main .title {
+  width: 100%;
+  font-size: 0.24rem /* 12/50 */;
+  text-align: center;
+  margin: 0.16rem /* 8/50 */ 0;
+  color: #979191;
+}
+.mm_main .lists {
+  width: 100%;
+}
+.mm_main .lists li {
+  display: flex;
+  padding: 0.2rem /* 10/50 */;
+  border-bottom: 1px solid #ccc;
+}
+.mm_main .lists li .left img {
+  width: 2.2rem /* 110/50 */;
+  height: 1.7rem /* 85/50 */;
+}
+.mm_main .lists li .right {
+  padding-left: 0.2rem /* 10/50 */;
+  flex: 1;
+  font-size: 0.28rem /* 14/50 */;
+}
+.mm_main .lists li .right .price {
+  font-size: 0.32rem /* 16/50 */;
+  font-weight: bolder;
+}
+.mm_main .lists li .right .time {
+  margin-top: 0.2rem /* 10/50 */;
+  font-size: 0.28rem /* 14/50 */;
+  color: #E70;
+}

@@ -11,25 +11,26 @@ $(function() {
     }
     rendercategory()
 
+    var titleId
+
+    function render() {
+        // 渲染列表
+        $.ajax({
+            type: 'get',
+            url: 'http://localhost:3000/api/getcategory',
+            data: { titleid: titleId },
+            success(info) {
+                $('.lists').html(template('tpl2', info))
+            }
+        })
+    }
+    render()
+
     // 注册点击事件
     $('.mm_main').on('click', '.top', function() {
         // 显示
         $(this).next('.lists').toggleClass('active')
-        let titleId = $(this).data('id')
-            // window.titleId = titleId
-        console.log($(this).next('.lists').find('a'));
-        let that = $(this)
-
-        function render() {
-            // 渲染列表
-            $.ajax({
-                type: 'get',
-                url: 'http://localhost:3000/api/getcategory?titleid=' + titleId,
-                success(info) {
-                    that.next().html(template('tpl2', info))
-                }
-            })
-        }
+        titleId = $(this).data('id')
         render()
     })
 })

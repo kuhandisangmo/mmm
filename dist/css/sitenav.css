@@ -1,0 +1,33 @@
+* {
+  box-sizing: none;
+}
+.mm_header .left {
+  text-align: center;
+  line-height: 0.96rem /* 48/50 */;
+  font-size: 0.5rem /* 25/50 */;
+  color: #ffffff;
+}
+.mm_content {
+  padding-top: 0.24rem /* 12/50 */;
+  width: 100%;
+  background-color: #fff;
+}
+.mm_content .box {
+  width: 6rem /* 300/50 */;
+  margin: 0 auto;
+  font-size: 0.32rem /* 16/50 */;
+}
+.mm_content .box a {
+  float: left;
+  text-decoration: none;
+  border: 1px solid #ccc;
+  font-size: 0.34rem /* 17/50 */;
+  padding: 0.16rem /* 8/50 */;
+  margin: 0 0 0.1rem /* 5/50 */ 0.1rem /* 5/50 */;
+  background-color: #f4f4f4;
+}
+.mm_content .box a img {
+  width: 0.36rem /* 18/50 */;
+  height: 0.36rem /* 18/50 */;
+  vertical-align: middle;
+}
