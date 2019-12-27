@@ -1,71 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 ,user-scalable=0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 ,user-scalable=0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>优惠券</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./lib/直接引用-bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="./css/coupon.css">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./lib/直接引用-bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/coupon.css" />
     <script src="./lib/jquery-3.4.1.min.js"></script>
     <script src="./js/rem.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- 头部 -->
     <header class="mm_header">
-        <div class="right">
-        </div>
-        <div class="left">
-            <h1>优惠券</h1>
-        </div>
-        <div class="right">
-            <img src="./img/header_app.png" alt="">
-        </div>
+      <div class="right"></div>
+      <div class="left">
+        <h1>优惠券</h1>
+      </div>
+      <div class="right">
+        <img src="./img/header_app.png" alt="" />
+      </div>
     </header>
     <section class="mm_main">
-        <!-- 面包屑导航 -->
-        <ol class="breadcrumb">
-            <li><a href="index.html">首页</a></li>
-            <li class="active">优惠券</li>
-        </ol>
-        <ul class="discount clearfix">
-            <!-- 挖坑 -->
-        </ul>
+      <!-- 面包屑导航 -->
+      <ol class="breadcrumb">
+        <li><a href="index.html">首页</a></li>
+        <li class="active">优惠券</li>
+      </ol>
+      <ul class="discount clearfix">
+        <!-- 挖坑 -->
+      </ul>
     </section>
     <!-- 底部 -->
     <footer class="mm_footer">
-        <div class="fff"></div>
-        <ul class="ft">
-            <li><a href="#">登录</a></li>
-            <li><a href="#">注册</a></li>
-            <li>
-                <a href="#"><img src="http://www.zuyushop.com/wap/images/top.jpg" alt="" width="15px"> 返回顶部</a>
-            </li>
-        </ul>
-        <div class="last">
-            <p><span class="main-color">手机APP下载</span><a href="index.html">慢慢买手机版</a>--掌上比价平台</p>
-            <p>m.manmanbuy.com</p>
-        </div>
+      <div class="fff"></div>
+      <ul class="ft">
+        <li><a href="#">登录</a></li>
+        <li><a href="#">注册</a></li>
+        <li>
+          <a href="#"
+            ><img
+              src="http://www.zuyushop.com/wap/images/top.jpg"
+              alt=""
+              width="15px"
+            />
+            返回顶部</a
+          >
+        </li>
+      </ul>
+      <div class="last">
+        <p>
+          <span class="main-color">手机APP下载</span
+          ><a href="index.html">慢慢买手机版</a>--掌上比价平台
+        </p>
+        <p>m.manmanbuy.com</p>
+      </div>
     </footer>
 
     <!-- 模板渲染 -->
     <script type="text/html" id="tpl">
-        {{each result v i}}
-        <li>
-            <a href="{{v.couponLink}}?couponId={{v.couponId}}">
-                <img src="{{v.couponImg}}" alt="图片加载失败">
-                <p>{{v.couponTitle}}</p>
-            </a>
-        </li>
-        <div class="box"></div>
-        {{/each}}
+      {{each result v i}}
+      <li>
+          <a href="{{v.couponLink}}?couponId={{v.couponId}}">
+              <img src="{{v.couponImg}}" alt="图片加载失败">
+              <p>{{v.couponTitle}}</p>
+          </a>
+      </li>
+      <div class="box"></div>
+      {{/each}}
     </script>
     <script src="./lib/template-web.js"></script>
     <script src="./lib/直接引用-bootstrap/js/bootstrap.min.js"></script>
     <script src="./js/coupon.js"></script>
-</body>
-
+  </body>
 </html>

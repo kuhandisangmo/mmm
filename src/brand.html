@@ -1,82 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 ,user-scalable=0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 ,user-scalable=0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>哪个牌子好</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/brand.css">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/brand.css" />
     <script src="./lib/jquery-3.4.1.min.js"></script>
     <script src="./js/rem.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- 头部 -->
     <header class="mm_header">
-        <div class="left">
-            <img src="./img/header_logo.png" alt="">
-        </div>
-        <div class="right">
-            <img src="./img/header_app.png" alt="">
-        </div>
+      <div class="left">
+        <img src="./img/header_logo.png" alt="" />
+      </div>
+      <div class="right">
+        <img src="./img/header_app.png" alt="" />
+      </div>
     </header>
     <!-- 搜索栏 -->
     <div class="mm_search">
-        <input class="left" type="text" placeholder="请输入你想比价的商品">
-        <button class="right search">搜索</button>
+      <input class="left" type="text" placeholder="请输入你想比价的商品" />
+      <button class="right search">搜索</button>
     </div>
     <!-- 面包屑导航 -->
     <ol class="breadcrumb clearfix">
-        <li><a href="index.html">首页</a></li>
-        <li> > </li>
-        <li><a href="branchTitle.html">全部分类</a></li>
-        <li> > </li>
-        <li class="active">排序详情</li>
+      <li><a href="index.html">首页</a></li>
+      <li>></li>
+      <li><a href="branchTitle.html">全部分类</a></li>
+      <li>></li>
+      <li class="active">排序详情</li>
     </ol>
     <!-- 主体区域 -->
     <section class="mm_main">
-        <!-- 品牌排行 -->
-        <div class="first">哪个牌子好</div>
-        <div class="lis">
-            <ul class="product">
-                <!-- 挖坑 -->
-            </ul>
-        </div>
+      <!-- 品牌排行 -->
+      <div class="first">哪个牌子好</div>
+      <div class="lis">
+        <ul class="product">
+          <!-- 挖坑 -->
+        </ul>
+      </div>
     </section>
     <!-- 底部 -->
     <footer class="mm_footer">
-        <div class="fff">
-        </div>
-        <ul class="ft">
-            <li><a href="#">登录</a></li>
-            <li><a href="#">注册</a></li>
-            <li>
-                <a href="index.html"><img src="http://www.zuyushop.com/wap/images/top.jpg" alt="" width="15px"> 返回顶部</a>
-            </li>
-        </ul>
-        <div class="last">
-            <p><span class="main-color">手机APP下载</span><a href="index.html">慢慢买手机版</a>--掌上比价平台</p>
-            <p>m.manmanbuy.com</p>
-        </div>
+      <div class="fff"></div>
+      <ul class="ft">
+        <li><a href="#">登录</a></li>
+        <li><a href="#">注册</a></li>
+        <li>
+          <a href="index.html"
+            ><img
+              src="http://www.zuyushop.com/wap/images/top.jpg"
+              alt=""
+              width="15px"
+            />
+            返回顶部</a
+          >
+        </li>
+      </ul>
+      <div class="last">
+        <p>
+          <span class="main-color">手机APP下载</span
+          ><a href="index.html">慢慢买手机版</a>--掌上比价平台
+        </p>
+        <p>m.manmanbuy.com</p>
+      </div>
     </footer>
     <!-- 模板渲染 -->
     <script type="text/html" id="tpl">
-        {{each result v i}}
-        <li>
-            <a href="productlist.html?categoryid={{v.categoryId}}" class="clearfix">
-                <div class="top">{{i}}</div>
-                <div class="text">
-                    <div class="prm">{{v.brandName}}</div>
-                    <p class="nums">{{v.brandInfo}}</p>
-                </div>
-            </a>
-        </li>
-        {{/each}}
+      {{each result v i}}
+      <li>
+          <a href="productlist.html?categoryid={{v.categoryId}}" class="clearfix">
+              <div class="top">{{i}}</div>
+              <div class="text">
+                  <div class="prm">{{v.brandName}}</div>
+                  <p class="nums">{{v.brandInfo}}</p>
+              </div>
+          </a>
+      </li>
+      {{/each}}
     </script>
     <script src="./lib/template-web.js"></script>
     <script src="./js/brand.js"></script>
-</body>
-
+  </body>
 </html>
